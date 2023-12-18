@@ -180,11 +180,9 @@ let executeCommands (commands: (string * string list) list) =
         with
         | ex ->
             printfn "\nОшибка при выполнении команды: %s" (String.concat " " (snd cmd))
-            printfn "Детали исключения : %s" (ex.ToString())
+            printfn "Детали исключения: %s" (ex.ToString())
 
 
 let fileName = "data.txt"
 let commands = readCommands fileName
 executeCommands commands
-
-//jghbknkmlassa
